@@ -3,6 +3,6 @@ package pl.korbeldaniel.erp2.logic;
 import javax.ejb.Local;
 
 @Local
-public interface IContactLogic {
+public interface IAccountLogic {
     String getTest();
 }
