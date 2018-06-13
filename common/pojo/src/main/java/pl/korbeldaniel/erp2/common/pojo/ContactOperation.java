@@ -1,0 +1,53 @@
+/**
+ * Copyright (C) 2016 Red Hat, Inc. and/or its affiliates.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package pl.korbeldaniel.erp2.common.pojo;
+
+/**
+ * This {@link Portable} type is fired as an Errai CDI event from the server so
+ * that clients can observe created and updated {@link Contact Contacts} from
+ * different browser sessions without refreshing.
+ * <p>
+ * This type encapulates a session id as well as a {@link Contact} so that the
+ * client that orginally created or updated a {@link Contact} can ignore the
+ * event.
+ */
+public class ContactOperation {
+
+	private final Contact contact;
+	private final String sourceQueueSessionId;
+
+	public ContactOperation(final Contact contact, final String sourceQueueSessionId) {
+		this.contact = contact;
+		this.sourceQueueSessionId = sourceQueueSessionId;
+	}
+
+	/**
+	 * A {@link Contact} that has been created or updated.
+	 */
+	public Contact getContact() {
+		return contact;
+	}
+
+	/**
+	 * The value of {@link ClientMessageBus#getSessionId()} from the browser session
+	 * from which the event is caused.
+	 */
+	public String getSourceQueueSessionId() {
+		return sourceQueueSessionId;
+	}
+
+}

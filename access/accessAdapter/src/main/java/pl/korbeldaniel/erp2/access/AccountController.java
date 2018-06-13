@@ -5,10 +5,7 @@ import javax.ws.rs.core.Response;
 
 import pl.korbeldaniel.erp2.logic.IAccountLogic;
 
-public class AccountRest implements IAccountRest{
-
-    //@Inject
-    //private ReservationDAO dao;
+public class AccountController implements IAccountRestController {
 
 	@Inject
 	private IAccountLogic accountLogic;

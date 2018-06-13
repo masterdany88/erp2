@@ -20,6 +20,10 @@
 			<groupId>pl.korbeldaniel.erp2</groupId>
 			<artifactId>logicPort</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>pl.korbeldaniel.erp2</groupId>
+			<artifactId>common.pojo</artifactId>
+		</dependency>
 		<!--Java EE -->
 		<dependency>
 			<groupId>javax</groupId>

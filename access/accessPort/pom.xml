@@ -10,11 +10,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>accessPort</artifactId>
 
-		<dependencies>
+	<dependencies>
 		<!--Java EE -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>pl.korbeldaniel.erp2</groupId>
+			<artifactId>common.pojo</artifactId>
 		</dependency>
 	</dependencies>
 </project> 

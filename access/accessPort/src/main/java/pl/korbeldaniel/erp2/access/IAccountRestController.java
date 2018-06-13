@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 @Path("/accounts")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public interface IAccountRest {
+public interface IAccountRestController {
 	@GET
 	@Path("{id}")
 	public Response get(@PathParam("id") @Min(0) Integer id);
