@@ -37,7 +37,7 @@
 		<module>access/accessPort</module>
 		<module>access/accessAdapter</module>
         
-        <module>webClient</module>
+        <!-- <module>webClient</module> -->
         
 		<module>integrationTest</module>
 		
