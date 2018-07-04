@@ -18,10 +18,10 @@ public class AccountController implements IAccountRestController {
 	}
 	
 	public Response get() {
-		String test = "initial test";
+		String test = "initial test  111";
 		test = accountLogic.getTest();
 		System.out.println(test);
-        return Response.ok("reservation |" + test + "| " + " get all accounts").build();
+        return Response.ok("reservation |" + test + "| " + " get all accounts 1111" ).build();
 	}
 
 }

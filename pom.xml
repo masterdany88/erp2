@@ -32,10 +32,9 @@
 		<module>logic/logicPort</module>
 		<module>logic/logicAdapter</module>
 
-		<module>access/accessPort</module>
-		<module>access/accessAdapter</module>
-
 		<module>integrationTest</module>
+
+
 
 	</modules>
 
@@ -95,6 +94,8 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<modules>
+				<module>access/accessPort</module>
+				<module>access/accessAdapter</module>
 				<module>ear</module>
 			</modules>
 			<properties>
@@ -110,9 +111,20 @@
 			</properties>
 		</profile>
 		<profile>
+			<id>devfront</id>
+			<modules>
+				<module>webClient</module>
+				<module>access/accessPort</module>
+				<module>access/accessAdapter</module>
+				<module>ear</module>
+			</modules>
+		</profile>
+		<profile>
 			<id>prod</id>
 			<modules>
 				<module>webClient</module>
+				<module>access/accessPort</module>
+				<module>access/accessAdapter</module>
 				<module>ear</module>
 			</modules>
 			<properties>
