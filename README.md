@@ -16,17 +16,25 @@ Build and deploy
 
  * cp /home/daniel/git/erp2/ear/target/erp2.ear /home/daniel/Pobrane/payara5/glassfish/domains/domain1/autodeploy/
 
-PROD BUILD
- * cd /home/daniel/git/erp2/
- * mvn clean install -P prod
+MAVEN BUILD PROFILES
+ * dev (active by default)
+ * devfront
+ * prod
+
+Go to project directory:
+ - cd /home/daniel/git/erp2/
+ 
+GWT DEV BUILD
+    Run gwt code server
+ * mvn -pl webClient -amd clean gwt:codeserver -P devfront
+    Move gwt src for dev to deploy on server
+ * mvn -pl access/accessPort/ -amd validate -P devfront
+    Build EAR package for dev deployment
+ * mvn clean install -P dev
 
 BACKEND DEV BUILD
- * cd /home/daniel/git/erp2/
  * mvn clean install -P dev
 
-FRONTEND DEV BUILD
- * cd /home/daniel/git/erp2/
- * mvn -pl webClient -amd clean gwt:codeserver -P devfront
- * mvn -pl webClient -amd validate -P devfront
- * mvn clean install -P dev
+PROD BUILD
+ * mvn clean install -P prod
 

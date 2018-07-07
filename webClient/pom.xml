@@ -73,10 +73,6 @@
 					</configuration>
 				</plugin>
 				<plugin>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.0.1</version>
-				</plugin>
-				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
 					<version>3.0.1</version>
 					<executions>
