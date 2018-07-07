@@ -33,7 +33,7 @@ public class CmsApp implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
-		Window.alert("bbbb");
+		Window.alert("cc");
 		final Button sendButton = new Button("Send");
 		final TextBox nameField = new TextBox();
 		nameField.setText("GWT User");

@@ -11,7 +11,7 @@ public class GenericCrudRest implements IGenericCrudRestController {
 	}
 	
 	public Response get() {
-		String test = "initial test for get all 55";
+		String test = "initial test for get all 77";
 		System.out.println(test);
         return Response.ok("generic |" + test + "| " + " get all generics").build();
 	}
