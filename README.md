@@ -25,10 +25,13 @@ Go to project directory:
  - cd /home/daniel/git/erp2/
  
 GWT DEV BUILD
+    
     Run gwt code server
  * mvn -pl webClient -amd clean gwt:codeserver -P devfront
+    
     Move gwt src for dev to deploy on server
  * mvn -pl access/accessPort/ -amd validate -P devfront
+    
     Build EAR package for dev deployment
  * mvn clean install -P dev
 
