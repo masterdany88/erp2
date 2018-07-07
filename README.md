@@ -27,15 +27,15 @@ Go to project directory:
 GWT DEV BUILD
     
     
-    *Run gwt code server
+   Run gwt code server
  * mvn -pl webClient -amd clean gwt:codeserver -P devfront
     
     
-    *Move gwt src for dev to deploy on server
+   Move gwt src for dev to deploy on server
  * mvn -pl access/accessPort/ -amd validate -P devfront
     
     
-    *Build EAR package for dev deployment
+   Build EAR package for dev deployment
  * mvn clean install -P dev
 
 BACKEND DEV BUILD
