@@ -5,16 +5,16 @@
 
 	<parent>
 		<groupId>pl.korbeldaniel.erp2</groupId>
-		<artifactId>webClient</artifactId>
+		<artifactId>ui</artifactId>
 		<version>0.1.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>webClientCms</artifactId>
+	<artifactId>micSuppUi</artifactId>
 	<packaging>gwt-app</packaging>
 
 	<properties>
-		<moduleName>pl.korbeldaniel.erp2.CmsApp</moduleName>
+		<moduleName>${project.groupId}.ms.${project.parent.artifactId}.${project.artifactId}</moduleName>
 	</properties>
 
 	<dependencies>
@@ -35,7 +35,7 @@
 				<artifactId>gwt-maven-plugin</artifactId>
 				<configuration>
 					<moduleName>${moduleName}</moduleName>
-					<moduleShortName>app</moduleShortName>
+					<moduleShortName>${project.artifactId}</moduleShortName>
 				</configuration>
 			</plugin>
 		</plugins>

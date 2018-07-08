@@ -10,7 +10,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<packaging>pom</packaging>
-	<artifactId>webClient</artifactId>
+	<artifactId>ui</artifactId>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -89,6 +89,7 @@
 		</pluginManagement>
 	</build>
 	<modules>
-		<module>webClientCms</module>
+		<module>cmsUi</module>
+		<module>micSuppUi</module>
 	</modules>
 </project>

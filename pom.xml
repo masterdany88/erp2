@@ -113,7 +113,7 @@
 		<profile>
 			<id>devfront</id>
 			<modules>
-				<module>webClient</module>
+				<module>ui</module>
 				<module>access/accessPort</module>
 				<module>access/accessAdapter</module>
 				<module>ear</module>
@@ -122,7 +122,7 @@
 		<profile>
 			<id>prod</id>
 			<modules>
-				<module>webClient</module>
+				<module>ui</module>
 				<module>access/accessPort</module>
 				<module>access/accessAdapter</module>
 				<module>ear</module>

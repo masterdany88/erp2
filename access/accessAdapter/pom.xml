@@ -83,7 +83,7 @@
 									<resources>
 										<resource>
 											<!-- <directory>${project.parent.build.directory}/gwt/codeserver/${moduleName}/compile-1/war/app/</directory> -->
-											<directory>/home/daniel/git/erp2/webClient/target/gwt/codeserver/pl.korbeldaniel.erp2.CmsApp/compile-1/war/</directory>
+											<directory>/home/daniel/git/erp2/ui/target/gwt/codeserver/pl.korbeldaniel.erp2.ms.ui.micSuppUi/compile-1/war/</directory>
 											<filtering>true</filtering>
 										</resource>
 									</resources>

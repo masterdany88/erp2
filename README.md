@@ -38,3 +38,26 @@ BACKEND DEV BUILD
 PROD BUILD
  * mvn clean install -P prod
 
+ 
+Package Naming convention
+--------------------------
+
+ <groupId>pl.korbeldaniel.erp2</groupId>
+ <artifactId>micSuppUi</artifactId>
+ <moduleShortName>${project.artifactId}</moduleShortName>
+ <moduleName>pl.korbeldaniel.erp2.ms.${project.artifactId}</moduleName>
+
+ pl.korbeldaniel.erp2.ms.ui.MicSuppUiEntryPoint
+ pl.korbeldaniel.erp2.ms.access;
+ pl.korbeldaniel.erp2.ms.data;
+ pl.korbeldaniel.erp2.ms.logic;
+ 
+ <groupId>pl.korbeldaniel.erp2</groupId>
+ <artifactId>cmsUi</artifactId>
+
+ pl.korbeldaniel.erp2.cms.ui.CmsUiEntryPoint
+ pl.korbeldaniel.erp2.cms.access;
+ pl.korbeldaniel.erp2.cms.data;
+ pl.korbeldaniel.erp2.cms.logic;
+
+

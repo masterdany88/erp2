@@ -17,7 +17,7 @@
   // Variables declared in this scope will be seen by both recompile_lib and the property providers.
   var $wnd = window;
   var $doc = $wnd.document;
-  var __moduleName = 'app';
+  var __moduleName = 'micSuppUi';
 
   // Because GWT linker architecture allows property providers to use global variables
   // we need to make sure that these are defined in the scope of property providers.
