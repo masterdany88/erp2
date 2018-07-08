@@ -30,7 +30,8 @@ public class MicSuppUiEntryPoint implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
-		Window.alert("MicSuppUiEntryPoint");
+		Window.alert("MicSuppUiEntryPoint 2");
+		Window.Location.assign("url");
 		final Button sendButton = new Button("Send");
 		final TextBox nameField = new TextBox();
 		nameField.setText("GWT User");
